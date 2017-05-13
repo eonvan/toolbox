@@ -1,0 +1,176 @@
+<div class="ui-fluid">
+    <div class="ui-g">
+        <div class="ui-g-12">
+            <div class="card card-w-title">
+                <h1>Form Elements</h1>
+                <div class="ui-g form-group">
+                    <div class="ui-g-12 ui-md-2">
+                        <label for="input">Input</label>
+                    </div>
+                    <div class="ui-g-12 ui-md-4">
+                        <span class="md-inputfield">
+                            <input id="input" type="text" pInputText/>
+                            <label>Username</label>
+                        </span>
+                    </div>
+                    <div class="ui-g-12 ui-md-2">
+                        <label for="textarea">Textarea</label>
+                    </div>
+                    <div class="ui-g-12 ui-md-4">
+                        <textarea [rows]="3" [cols]="30" pInputTextarea autoResize="autoResize"></textarea>
+                    </div>
+
+                    <div class="ui-g-12 ui-md-2">
+                        <label for="calendar">Calendar</label>
+                    </div>
+                    <div class="ui-g-12 ui-md-4">
+                        <p-calendar id="calendar"></p-calendar>
+                    </div>
+                    <div class="ui-g-12 ui-md-2">
+                        <label for="autocomplete">AutoComplete</label>
+                    </div>
+                    <div class="ui-g-12 ui-md-4">
+                        <p-autoComplete [(ngModel)]="country" [suggestions]="filteredCountries" (completeMethod)="filterCountry($event)" field="name"
+                                        placeholder="Countries" [minLength]="1"></p-autoComplete>
+                    </div>
+
+                    <div class="ui-g-12 ui-md-2">
+                        <label for="dropdown">Dropdown</label>
+                    </div>
+                    <div class="ui-g-12 ui-md-4">
+                        <p-dropdown id="dropdown" [options]="cities" [(ngModel)]="selectedCity1" [autoWidth]="false"></p-dropdown>
+                    </div>
+                    <div class="ui-g-12 ui-md-2">
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="ui-g-12 ui-md-4">
+                        <input id="password" pPassword type="password"/>
+                    </div>
+
+                    <div class="ui-g-12 ui-md-2">
+                        <label for="mask">Mask</label>
+                    </div>
+                    <div class="ui-g-12 ui-md-4">
+                        <p-inputMask mask="99/99/9999" slotChar="dd/mm/yyyy" placeholder="Date"></p-inputMask>
+                    </div>
+                    <div class="ui-g-12 ui-md-2">
+                        <label for="spinner">Spinner</label>
+                    </div>
+                    <div class="ui-g-12 ui-md-4">
+                        <p-spinner></p-spinner>
+                    </div>
+
+                    <div class="ui-g-12 ui-md-2">
+                        Checkbox
+                    </div>
+                    <div class="ui-g-12 ui-md-4">
+                        <div class="ui-g">
+                            <div class="ui-g-12">
+                                <p-checkbox name="cg" value="Ultima" label="Ultima" [(ngModel)]="checkboxValues"></p-checkbox>
+                            </div>
+                            <div class="ui-g-12">
+                                <p-checkbox name="cg" value="Icarus" label="Icarus" [(ngModel)]="checkboxValues"></p-checkbox>
+                            </div>
+                            <div class="ui-g-12">
+                                <p-checkbox name="cg" value="Omega" label="Omega" [(ngModel)]="checkboxValues"></p-checkbox>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui-g-12 ui-md-2">
+                        RadioButton
+                    </div>
+                    <div class="ui-g-12 ui-md-4">
+                        <div class="ui-g">
+                            <div class="ui-g-12">
+                                <p-radioButton name="rg" value="Ultima" label="Ultima" [(ngModel)]="radioValue"></p-radioButton>
+                            </div>
+                            <div class="ui-g-12">
+                                <p-radioButton name="rg" value="Icarus" label="Icarus" [(ngModel)]="radioValue"></p-radioButton>
+                            </div>
+                            <div class="ui-g-12">
+                                <p-radioButton name="rg" value="Omega" label="Omega" [(ngModel)]="radioValue"></p-radioButton>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ui-g-12 ui-md-2">
+                        <label for="slider">Slider</label>
+                    </div>
+                    <div class="ui-g-12 ui-md-4">
+                        <p-slider></p-slider>
+                    </div>
+                    <div class="ui-g-12 ui-md-2">
+                        Button
+                    </div>
+                    <div class="ui-g-12 ui-md-4">
+                        <button pButton type="button" label="Edit" icon="ui-icon-edit"></button>
+                    </div>
+
+                    <div class="ui-g-12 ui-md-2">
+                        SplitButton
+                    </div>
+                    <div class="ui-g-12 ui-md-4">
+                        <p-splitButton label="Save" icon="ui-icon-save" [model]="splitButtonItems"></p-splitButton>
+                    </div>
+                    <div class="ui-g-12 ui-md-2">
+                        <label for="multiselect">MultiSelect</label>
+                    </div>
+                    <div class="ui-g-12 ui-md-4">
+                        <p-multiSelect id="multiselect" [options]="carOptions" [(ngModel)]="selectedMultiSelectCars"></p-multiSelect>
+                    </div>
+
+                    <div class="ui-g-12 ui-md-2">
+                        ToggleButton
+                    </div>
+                    <div class="ui-g-12 ui-md-4">
+                        <p-toggleButton [(ngModel)]="toggleButtonChecked"></p-toggleButton>
+                    </div>
+                    <div class="ui-g-12 ui-md-2">
+                        SelectButton
+                    </div>
+                    <div class="ui-g-12 ui-md-4">
+                        <p-selectButton [options]="types" [(ngModel)]="selectedType"></p-selectButton>
+                    </div>
+
+                    <div class="ui-g-12 ui-md-2">
+                        <label for="listbox">Listbox</label>
+                    </div>
+                    <div class="ui-g-12 ui-md-4">
+                        <p-listbox [options]="cities" [(ngModel)]="selectedCity2"></p-listbox>
+                    </div>
+                    <div class="ui-g-12 ui-md-2">
+                        Dialog
+                    </div>
+                    <div class="ui-g-12 ui-md-4">
+                        <button type="button" label="Login" icon="ui-icon-open-in-new" (click)="dialogVisible=true" pButton></button>
+                    </div>
+                </div>
+
+                <p-dialog header="Login" [resizable]="false" responsive="true" [(visible)]="dialogVisible">
+                    <div class="ui-g form-group" style="margin-bottom: 16px;">
+                        <div class="ui-g-12">
+                            <span class="md-inputfield">
+                                <input type="text" pInputText>
+                                <label>Name</label>
+                            </span>
+                        </div>
+                        <div class="ui-g-12">
+                            <span class="md-inputfield">
+                                <input type="password" pInputText>
+                                <label>Password</label>
+                            </span>
+                        </div>
+                    </div>
+
+                    <footer>
+                        <div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix">
+                            <button type="button" label="Login" icon="ui-icon-person" (click)="dialogVisible=false" pButton></button>
+                        </div>
+                    </footer>
+                </p-dialog>
+            </div>
+
+        </div>
+
+    </div>
+</div>
