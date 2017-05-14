@@ -1,4 +1,4 @@
-package toolbox.rest;
+package toolbox.rest.events;
 
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.core.JsonProcessingException;

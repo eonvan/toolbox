@@ -1,4 +1,4 @@
-package toolbox.rest;
+package toolbox.rest.events;
 
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.JsonProcessingException;

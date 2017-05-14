@@ -9,6 +9,9 @@ import org.springframework.http.converter.json.Jackson2ObjectMapperBuilder;
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+import toolbox.rest.events.Event;
+import toolbox.rest.events.EventDeserializer;
+import toolbox.rest.events.EventSerializer;
 
 import java.util.List;
 

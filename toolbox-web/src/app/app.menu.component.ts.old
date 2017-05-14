@@ -27,8 +27,8 @@ export class AppMenuComponent implements OnInit {
                 label: 'Themes', icon: 'palette',
                 items: [
                     {
-                        label: 'Barclays - Blue', icon: 'brush', command: (event) => {
-                        this.changeTheme('barclays')
+                        label: 'Light - Blue', icon: 'brush', command: (event) => {
+                        this.changeTheme('blue')
                     }
                     },
                     {

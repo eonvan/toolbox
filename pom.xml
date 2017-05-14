@@ -3,8 +3,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.axonframework.sample.axonbank</groupId>
-    <artifactId>axonbank</artifactId>
+    <groupId>toolbox</groupId>
+    <artifactId>toolbox-parent</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <modules>
         <module>toolbox-core</module>
@@ -12,8 +12,8 @@
     </modules>
     <packaging>pom</packaging>
 
-    <name>axonbank</name>
-    <description>Demo project for Axon Framework</description>
+    <name>Toolbox</name>
+    <description>Mini cloud management dashboard</description>
 
     <parent>
 

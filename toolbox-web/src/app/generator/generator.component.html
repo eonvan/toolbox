@@ -30,15 +30,15 @@
                         <label for="autocomplete">AutoComplete</label>
                     </div>
                     <div class="ui-g-12 ui-md-4">
-                        <p-autoComplete [(ngModel)]="country" [suggestions]="filteredCountries" (completeMethod)="filterCountry($event)" field="name"
-                                        placeholder="Countries" [minLength]="1"></p-autoComplete>
+                        <!--p-autoComplete [(ngModel)]="country" [suggestions]="filteredCountries" (completeMethod)="filterCountry($event)" field="name"
+                                        placeholder="Countries" [minLength]="1"></p-autoComplete-->
                     </div>
 
                     <div class="ui-g-12 ui-md-2">
                         <label for="dropdown">Dropdown</label>
                     </div>
                     <div class="ui-g-12 ui-md-4">
-                        <p-dropdown id="dropdown" [options]="cities" [(ngModel)]="selectedCity1" [autoWidth]="false"></p-dropdown>
+                        <!--<p-dropdown id="dropdown" [options]="cities" [(ngModel)]="selectedCity1" [autoWidth]="false"></p-dropdown>-->
                     </div>
                     <div class="ui-g-12 ui-md-2">
                         <label for="password">Password</label>
@@ -66,13 +66,13 @@
                     <div class="ui-g-12 ui-md-4">
                         <div class="ui-g">
                             <div class="ui-g-12">
-                                <p-checkbox name="cg" value="Ultima" label="Ultima" [(ngModel)]="checkboxValues"></p-checkbox>
+                                <p-checkbox name="cg" value="Ultima" label="Ultima" ></p-checkbox>
                             </div>
                             <div class="ui-g-12">
-                                <p-checkbox name="cg" value="Icarus" label="Icarus" [(ngModel)]="checkboxValues"></p-checkbox>
+                                <p-checkbox name="cg" value="Icarus" label="Icarus" ></p-checkbox>
                             </div>
                             <div class="ui-g-12">
-                                <p-checkbox name="cg" value="Omega" label="Omega" [(ngModel)]="checkboxValues"></p-checkbox>
+                                <p-checkbox name="cg" value="Omega" label="Omega"></p-checkbox>
                             </div>
                         </div>
                     </div>
@@ -82,13 +82,13 @@
                     <div class="ui-g-12 ui-md-4">
                         <div class="ui-g">
                             <div class="ui-g-12">
-                                <p-radioButton name="rg" value="Ultima" label="Ultima" [(ngModel)]="radioValue"></p-radioButton>
+                                <p-radioButton name="rg" value="Ultima" label="Ultima"></p-radioButton>
                             </div>
                             <div class="ui-g-12">
-                                <p-radioButton name="rg" value="Icarus" label="Icarus" [(ngModel)]="radioValue"></p-radioButton>
+                                <p-radioButton name="rg" value="Icarus" label="Icarus"></p-radioButton>
                             </div>
                             <div class="ui-g-12">
-                                <p-radioButton name="rg" value="Omega" label="Omega" [(ngModel)]="radioValue"></p-radioButton>
+                                <p-radioButton name="rg" value="Omega" label="Omega"></p-radioButton>
                             </div>
                         </div>
                     </div>
@@ -110,43 +110,36 @@
                         SplitButton
                     </div>
                     <div class="ui-g-12 ui-md-4">
-                        <p-splitButton label="Save" icon="ui-icon-save" [model]="splitButtonItems"></p-splitButton>
+                        <p-splitButton label="Save" icon="ui-icon-save" ></p-splitButton>
                     </div>
                     <div class="ui-g-12 ui-md-2">
                         <label for="multiselect">MultiSelect</label>
                     </div>
                     <div class="ui-g-12 ui-md-4">
-                        <p-multiSelect id="multiselect" [options]="carOptions" [(ngModel)]="selectedMultiSelectCars"></p-multiSelect>
+                        <p-multiSelect id="multiselect"></p-multiSelect>
                     </div>
 
                     <div class="ui-g-12 ui-md-2">
                         ToggleButton
                     </div>
                     <div class="ui-g-12 ui-md-4">
-                        <p-toggleButton [(ngModel)]="toggleButtonChecked"></p-toggleButton>
+                        <p-toggleButton></p-toggleButton>
                     </div>
-                    <div class="ui-g-12 ui-md-2">
-                        SelectButton
-                    </div>
-                    <div class="ui-g-12 ui-md-4">
-                        <p-selectButton [options]="types" [(ngModel)]="selectedType"></p-selectButton>
-                    </div>
-
                     <div class="ui-g-12 ui-md-2">
                         <label for="listbox">Listbox</label>
                     </div>
                     <div class="ui-g-12 ui-md-4">
-                        <p-listbox [options]="cities" [(ngModel)]="selectedCity2"></p-listbox>
+                        <p-listbox></p-listbox>
                     </div>
                     <div class="ui-g-12 ui-md-2">
                         Dialog
                     </div>
                     <div class="ui-g-12 ui-md-4">
-                        <button type="button" label="Login" icon="ui-icon-open-in-new" (click)="dialogVisible=true" pButton></button>
+                        <button type="button" label="Login" icon="ui-icon-open-in-new"  pButton></button>
                     </div>
                 </div>
 
-                <p-dialog header="Login" [resizable]="false" responsive="true" [(visible)]="dialogVisible">
+                <p-dialog header="Login" responsive="true">
                     <div class="ui-g form-group" style="margin-bottom: 16px;">
                         <div class="ui-g-12">
                             <span class="md-inputfield">
@@ -164,7 +157,7 @@
 
                     <footer>
                         <div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix">
-                            <button type="button" label="Login" icon="ui-icon-person" (click)="dialogVisible=false" pButton></button>
+                            <button type="button" label="Login" icon="ui-icon-person" pButton></button>
                         </div>
                     </footer>
                 </p-dialog>

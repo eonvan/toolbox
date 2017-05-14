@@ -23,7 +23,7 @@
         <java.version>1.8</java.version>
         <kotlin.version>1.1.2-3</kotlin.version>
         <!-- The main class to start by executing java -jar -->
-        <!--<start-class>org.axonframework.sample.axonbank.AxonBankApplication</start-class>-->
+        <start-class>toolbox.rest.Application</start-class>
     </properties>
 
     <dependencies>
@@ -35,6 +35,10 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-rest</artifactId>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -88,6 +92,16 @@
             <groupId>com.fasterxml.jackson.module</groupId>
             <artifactId>jackson-module-kotlin</artifactId>
             <version>2.8.8</version>
+        </dependency>
+        <dependency>
+            <groupId>org.atmosphere</groupId>
+            <artifactId>atmosphere-runtime</artifactId>
+            <version>2.2.4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>atmosphere-javascript</artifactId>
+            <version>2.2.3</version>
         </dependency>
     </dependencies>
 
