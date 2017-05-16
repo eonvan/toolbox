@@ -1,0 +1,28 @@
+<div class="profile" [ngClass]="{'profile-expanded':active}">
+    <div class="profile-image" [style.background]="imageUrl"></div>
+    <a href="#" (click)="onClick($event)">
+        <span class="profile-name">Organisation</span>
+        <i class="material-icons">keyboard_arrow_down</i>
+    </a>
+</div>
+
+<ul class="ultima-menu profile-menu" [@menu]="active ? 'visible' : 'hidden'">
+    <li role="menuitem">
+        <a [routerLink]="['organisation/1']" class="ripplelink" [attr.tabindex]="!active ? '-1' : null">
+            <i class="material-icons">cloud</i>
+            <span>My First Organisation</span>
+        </a>
+    </li>
+    <li role="menuitem">
+        <a [routerLink]="['organisation/2']" class="ripplelink" [attr.tabindex]="!active ? '-1' : null">
+            <i class="material-icons">cloud</i>
+            <span>My Second Organisation</span>
+        </a>
+    </li>
+    <li role="menuitem">
+        <a [routerLink]="['organisation/3']" class="ripplelink" [attr.tabindex]="!active ? '-1' : null">
+            <i class="material-icons">cloud</i>
+            <span>My Third Organisation</span>
+        </a>
+    </li>
+</ul>

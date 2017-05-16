@@ -1,11 +1,5 @@
 import {NgModule} from "@angular/core";
-import {FormsModule} from "@angular/forms";
-import {HttpModule} from "@angular/http";
-import {BrowserModule} from "@angular/platform-browser";
-import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-import {LocationStrategy, HashLocationStrategy} from "@angular/common";
-import {AppRoutes} from "./app.routes";
-import "rxjs/add/operator/toPromise";
+import {CommonModule} from "@angular/common";
 import {
     AccordionModule,
     AutoCompleteModule,
@@ -71,41 +65,22 @@ import {
     TreeModule,
     TreeTableModule
 } from "primeng/primeng";
-import {AppComponent} from "./app.component";
-import {AppMenuComponent, AppSubMenu} from "./app.menu.component";
-import {AppTopBar} from "./app.topbar.component";
-import {AppFooter} from "./app.footer.component";
-import {InlineProfileComponent} from "./app.profile.component";
-import {DashboardDemo} from "./demo/view/dashboarddemo";
-import {SampleDemo} from "./demo/view/sampledemo";
-import {FormsDemo} from "./demo/view/formsdemo";
-import {DataDemo} from "./demo/view/datademo";
-import {PanelsDemo} from "./demo/view/panelsdemo";
-import {OverlaysDemo} from "./demo/view/overlaysdemo";
-import {MenusDemo} from "./demo/view/menusdemo";
-import {MessagesDemo} from "./demo/view/messagesdemo";
-import {MiscDemo} from "./demo/view/miscdemo";
-import {EmptyDemo} from "./demo/view/emptydemo";
-import {ChartsDemo} from "./demo/view/chartsdemo";
-import {FileDemo} from "./demo/view/filedemo";
-import {UtilsDemo} from "./demo/view/utilsdemo";
-import {Documentation} from "./demo/view/documentation";
-import {CarService} from "./demo/service/carservice";
-import {CountryService} from "./demo/service/countryservice";
-import {EventService} from "./demo/service/eventservice";
-import {NodeService} from "./demo/service/nodeservice";
-import {DashboardModule} from "./dashboard/dashboard.module";
-import {GeneratorModule} from "./generator/generator.module";
-import {OrganisationModule} from "./organisation/organisation.module";
-import {OrganisationSwitcherComponent} from "./organisation/organisation-switcher.component";
+import {BrowserModule} from "@angular/platform-browser";
+import {FormsModule} from "@angular/forms";
+import {AppRoutes} from "../app.routes";
+import {HttpModule} from "@angular/http";
+import {OrganisationComponent} from "./organisation.component";
+import {OrganisationRoutingModule} from "./organisation-routing.module";
+import {SpaceComponent} from "../space/space.component";
+import {ServiceComponent} from "../service/service.component";
 
 @NgModule({
     imports: [
+        CommonModule,
         BrowserModule,
         FormsModule,
         AppRoutes,
         HttpModule,
-        BrowserAnimationsModule,
         AccordionModule,
         AutoCompleteModule,
         BreadcrumbModule,
@@ -169,39 +144,11 @@ import {OrganisationSwitcherComponent} from "./organisation/organisation-switche
         TooltipModule,
         TreeModule,
         TreeTableModule,
-        DashboardModule,
-        GeneratorModule,
-        OrganisationModule
+        OrganisationRoutingModule
     ],
-    declarations: [
-        AppComponent,
-        AppMenuComponent,
-        AppSubMenu,
-        AppTopBar,
-        AppFooter,
-        InlineProfileComponent,
-        DashboardDemo,
-        SampleDemo,
-        FormsDemo,
-        DataDemo,
-        PanelsDemo,
-        OverlaysDemo,
-        MenusDemo,
-        MessagesDemo,
-        MessagesDemo,
-        MiscDemo,
-        ChartsDemo,
-        EmptyDemo,
-        FileDemo,
-        UtilsDemo,
-        Documentation,
-        OrganisationSwitcherComponent
-    ],
-    providers: [
-        {provide: LocationStrategy, useClass: HashLocationStrategy},
-        CarService, CountryService, EventService, NodeService
-    ],
-    bootstrap: [AppComponent]
+    declarations: [OrganisationComponent,
+        ServiceComponent,
+        SpaceComponent]
 })
-export class AppModule {
+export class OrganisationModule {
 }

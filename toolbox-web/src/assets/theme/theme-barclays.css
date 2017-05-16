@@ -3348,7 +3348,7 @@ body {
     -webkit-transition: background-color 0.3s;
     transition: background-color 0.3s; }
     body .ui-button:enabled:not(:focus):hover, body .ui-datepicker-buttonpane > button:enabled:not(:focus):hover {
-      background-color: #0277BD; }
+      background-color: #23517f; }
     body .ui-button:focus, body .ui-datepicker-buttonpane > button:focus {
       outline: 0 none;
       background-color: #21c3ff; }
@@ -3467,12 +3467,12 @@ body {
       -webkit-box-shadow: none;
       -moz-box-shadow: none; }
   body .ui-buttonset .ui-button:not(.ui-state-disabled):not(.ui-state-active):hover {
-    background-color: #0277BD; }
+    background-color: #23517f; }
   body .ui-buttonset .ui-button.ui-state-active {
     background-color: #FFC107;
     color: #212121; }
   body .ui-togglebutton:not(.ui-state-active):not(.ui-state-disabled):hover {
-    background-color: #0277BD; }
+    background-color: #23517f; }
   body .ui-togglebutton.ui-state-active {
     background-color: #FFC107;
     color: #212121; }
@@ -3950,8 +3950,8 @@ body {
     body .ui-datepicker .ui-datepicker-header {
       padding: 0.625em 1em;
       font-size: 1em;
-      background: #0277BD;
-      border-color: #0277BD;
+      background: #23517f;
+      border-color: #23517f;
       -moz-border-radius-topleft: 2px;
       -webkit-border-top-left-radius: 2px;
       border-top-left-radius: 2px;
@@ -4406,7 +4406,7 @@ body .ui-fieldset {
       -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
       -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12); }
       body .ui-fieldset .ui-fieldset-legend .ui-fieldset-toggler:hover {
-        background-color: #0277BD; }
+        background-color: #23517f; }
     body .ui-fieldset .ui-fieldset-legend.ui-state-focus {
       background-color: transparent; }
 body .ui-accordion .ui-accordion-header {
@@ -4423,7 +4423,7 @@ body .ui-accordion .ui-accordion-header {
     padding-left: 2.5em;
     color: #ffffff; }
   body .ui-accordion .ui-accordion-header:not(.ui-state-active):not(.ui-state-disabled):hover {
-    background-color: #0277BD; }
+    background-color: #23517f; }
   body .ui-accordion .ui-accordion-header.ui-state-active {
     background-color: #FFC107;
     color: #212121;
@@ -4445,7 +4445,7 @@ body .ui-accordion .ui-accordion-content {
   padding: 0.625em 1em;
   line-height: 1.5em; }
 body .ui-toolbar {
-  background-color: #0277BD;
+  background-color: #23517f;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
   -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
   -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
@@ -4628,7 +4628,7 @@ body .ui-orderlist .ui-orderlist-controls {
     margin-right: 0;
     display: inline-block; }
 body .ui-paginator {
-  background-color: #0277BD;
+  background-color: #23517f;
   padding: 0.625em 1em; }
   body .ui-paginator > a {
     box-sizing: border-box;

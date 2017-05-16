@@ -1,166 +1,50 @@
 <div class="ui-fluid">
     <div class="ui-g">
-        <div class="ui-g-12">
+        <div class="ui-g-4">
             <div class="card card-w-title">
-                <h1>Form Elements</h1>
+                <h1>Organisation</h1>
+                <div class="ui-g form-group">
+                    <div class="ui-g-12 ui-md-4">
+                        <span class="md-inputfield">
+                            <input id="input" type="text" pInputText/>
+                            <label>Name</label>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="ui-g-12">
+                <!-- Left Side -->
+                <div class="card card-w-title">
+                    <h1>Spaces</h1>
+                    <!--<p-dataGrid [value]="cars2" [paginator]="true" [rows]="9">-->
+                    <!--<p-header>-->
+                    <!--Org spaces-->
+                    <!--</p-header>-->
+                    <!--<ng-template let-car pTemplate="item">-->
+                    <!--<div style="padding:3px" class="ui-g-12 ui-md-4">-->
+                    <!--<p-panel [header]="car.vin" [style]="{'text-align':'center'}">-->
+                    <!--<img src="assets/demo/images/car/{{car.brand}}.gif">-->
+                    <!--<div class="car-detail">{{car.year}} - {{car.color}}</div>-->
+                    <!--</p-panel>-->
+                    <!--</div>-->
+                    <!--</ng-template>-->
+                    <!--</p-dataGrid>-->
+                </div>
+            </div>
+
+            <div class="card card-w-title">
+                <h1>Space</h1>
                 <div class="ui-g form-group">
                     <div class="ui-g-12 ui-md-2">
-                        <label for="input">Input</label>
+                        <label for="input">Name</label>
                     </div>
                     <div class="ui-g-12 ui-md-4">
                         <span class="md-inputfield">
                             <input id="input" type="text" pInputText/>
-                            <label>Username</label>
+                            <label>Org name</label>
                         </span>
                     </div>
-                    <div class="ui-g-12 ui-md-2">
-                        <label for="textarea">Textarea</label>
-                    </div>
-                    <div class="ui-g-12 ui-md-4">
-                        <textarea [rows]="3" [cols]="30" pInputTextarea autoResize="autoResize"></textarea>
-                    </div>
-
-                    <div class="ui-g-12 ui-md-2">
-                        <label for="calendar">Calendar</label>
-                    </div>
-                    <div class="ui-g-12 ui-md-4">
-                        <p-calendar id="calendar"></p-calendar>
-                    </div>
-                    <div class="ui-g-12 ui-md-2">
-                        <label for="autocomplete">AutoComplete</label>
-                    </div>
-                    <div class="ui-g-12 ui-md-4">
-                        <!--p-autoComplete [(ngModel)]="country" [suggestions]="filteredCountries" (completeMethod)="filterCountry($event)" field="name"
-                                        placeholder="Countries" [minLength]="1"></p-autoComplete-->
-                    </div>
-
-                    <div class="ui-g-12 ui-md-2">
-                        <label for="dropdown">Dropdown</label>
-                    </div>
-                    <div class="ui-g-12 ui-md-4">
-                        <!--<p-dropdown id="dropdown" [options]="cities" [(ngModel)]="selectedCity1" [autoWidth]="false"></p-dropdown>-->
-                    </div>
-                    <div class="ui-g-12 ui-md-2">
-                        <label for="password">Password</label>
-                    </div>
-                    <div class="ui-g-12 ui-md-4">
-                        <input id="password" pPassword type="password"/>
-                    </div>
-
-                    <div class="ui-g-12 ui-md-2">
-                        <label for="mask">Mask</label>
-                    </div>
-                    <div class="ui-g-12 ui-md-4">
-                        <p-inputMask mask="99/99/9999" slotChar="dd/mm/yyyy" placeholder="Date"></p-inputMask>
-                    </div>
-                    <div class="ui-g-12 ui-md-2">
-                        <label for="spinner">Spinner</label>
-                    </div>
-                    <div class="ui-g-12 ui-md-4">
-                        <p-spinner></p-spinner>
-                    </div>
-
-                    <div class="ui-g-12 ui-md-2">
-                        Checkbox
-                    </div>
-                    <div class="ui-g-12 ui-md-4">
-                        <div class="ui-g">
-                            <div class="ui-g-12">
-                                <p-checkbox name="cg" value="Ultima" label="Ultima" ></p-checkbox>
-                            </div>
-                            <div class="ui-g-12">
-                                <p-checkbox name="cg" value="Icarus" label="Icarus" ></p-checkbox>
-                            </div>
-                            <div class="ui-g-12">
-                                <p-checkbox name="cg" value="Omega" label="Omega"></p-checkbox>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ui-g-12 ui-md-2">
-                        RadioButton
-                    </div>
-                    <div class="ui-g-12 ui-md-4">
-                        <div class="ui-g">
-                            <div class="ui-g-12">
-                                <p-radioButton name="rg" value="Ultima" label="Ultima"></p-radioButton>
-                            </div>
-                            <div class="ui-g-12">
-                                <p-radioButton name="rg" value="Icarus" label="Icarus"></p-radioButton>
-                            </div>
-                            <div class="ui-g-12">
-                                <p-radioButton name="rg" value="Omega" label="Omega"></p-radioButton>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="ui-g-12 ui-md-2">
-                        <label for="slider">Slider</label>
-                    </div>
-                    <div class="ui-g-12 ui-md-4">
-                        <p-slider></p-slider>
-                    </div>
-                    <div class="ui-g-12 ui-md-2">
-                        Button
-                    </div>
-                    <div class="ui-g-12 ui-md-4">
-                        <button pButton type="button" label="Edit" icon="ui-icon-edit"></button>
-                    </div>
-
-                    <div class="ui-g-12 ui-md-2">
-                        SplitButton
-                    </div>
-                    <div class="ui-g-12 ui-md-4">
-                        <p-splitButton label="Save" icon="ui-icon-save" ></p-splitButton>
-                    </div>
-                    <div class="ui-g-12 ui-md-2">
-                        <label for="multiselect">MultiSelect</label>
-                    </div>
-                    <div class="ui-g-12 ui-md-4">
-                        <p-multiSelect id="multiselect"></p-multiSelect>
-                    </div>
-
-                    <div class="ui-g-12 ui-md-2">
-                        ToggleButton
-                    </div>
-                    <div class="ui-g-12 ui-md-4">
-                        <p-toggleButton></p-toggleButton>
-                    </div>
-                    <div class="ui-g-12 ui-md-2">
-                        <label for="listbox">Listbox</label>
-                    </div>
-                    <div class="ui-g-12 ui-md-4">
-                        <p-listbox></p-listbox>
-                    </div>
-                    <div class="ui-g-12 ui-md-2">
-                        Dialog
-                    </div>
-                    <div class="ui-g-12 ui-md-4">
-                        <button type="button" label="Login" icon="ui-icon-open-in-new"  pButton></button>
-                    </div>
                 </div>
-
-                <p-dialog header="Login" responsive="true">
-                    <div class="ui-g form-group" style="margin-bottom: 16px;">
-                        <div class="ui-g-12">
-                            <span class="md-inputfield">
-                                <input type="text" pInputText>
-                                <label>Name</label>
-                            </span>
-                        </div>
-                        <div class="ui-g-12">
-                            <span class="md-inputfield">
-                                <input type="password" pInputText>
-                                <label>Password</label>
-                            </span>
-                        </div>
-                    </div>
-
-                    <footer>
-                        <div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix">
-                            <button type="button" label="Login" icon="ui-icon-person" pButton></button>
-                        </div>
-                    </footer>
-                </p-dialog>
             </div>
 
         </div>

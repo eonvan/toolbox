@@ -33,3 +33,5 @@ To get more help on the `angular-cli` use `ng help` or go check out the [Angular
 ## Compile theme
 
 sass src/assets/theme/theme-mytheme.scss src/assets/theme/theme-mytheme.css
+
+sass src/assets/layout/css/layout-mylayout.scss src/assets/layout/css/layout-mylayout.css
